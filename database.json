@@ -1,0 +1,17 @@
+{
+"infinite_upgrades":[
+    { "upgrade_id":5, "upgrade_cost":30, "upgrade_increaseCPCby":0, "upgrade_increaseCPSby":0.1, "upgrade_name":"Mice", "upgrade_tooltip":"Gives +0.1 CPS" },
+    { "upgrade_id":6, "upgrade_cost":200, "upgrade_increaseCPCby":0, "upgrade_increaseCPSby":1, "upgrade_name":"Mouse", "upgrade_tooltip":"Gives +1 CPS" },
+    { "upgrade_id":7, "upgrade_cost":1500, "upgrade_increaseCPCby":0, "upgrade_increaseCPSby":10, "upgrade_name":"Rat", "upgrade_tooltip":"Gives +10 CPS" },
+    { "upgrade_id":8, "upgrade_cost":10000, "upgrade_increaseCPCby":0, "upgrade_increaseCPSby":50, "upgrade_name":"Cheese", "upgrade_tooltip":"Gives +50 CPS" },
+    { "upgrade_id":9, "upgrade_cost":50000, "upgrade_increaseCPCby":0, "upgrade_increaseCPSby":200, "upgrade_name":"Pizza", "upgrade_tooltip":"Gives +200 CPS" },
+    { "upgrade_id":10, "upgrade_cost":250000, "upgrade_increaseCPCby":0, "upgrade_increaseCPSby":1000, "upgrade_name":"The entire country of Italy", "upgrade_tooltip":"Gives +1000 CPS" }
+],
+
+"finite_upgrades":[
+    { "upgrade_id":1, "upgrade_cost":50, "upgrade_increaseCPCby":1, "upgrade_increaseCPSby":0, "upgrade_name":"Click!", "upgrade_tooltip":"Gives +1 CPC" },
+    { "upgrade_id":2, "upgrade_cost":1000, "upgrade_increaseCPCby":2, "upgrade_increaseCPSby":0, "upgrade_name":"Click it off!", "upgrade_tooltip":"Gives +2 CPC" },
+    { "upgrade_id":3, "upgrade_cost":15000, "upgrade_increaseCPCby":4, "upgrade_increaseCPSby":0, "upgrade_name":"Clicking...", "upgrade_tooltip":"Gives +4 CPC" },
+    { "upgrade_id":4, "upgrade_cost":654321, "upgrade_increaseCPCby":8, "upgrade_increaseCPSby":0, "upgrade_name":"🖱", "upgrade_tooltip":"Gives +8 CPC" }
+]
+}
