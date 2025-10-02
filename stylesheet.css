@@ -2,6 +2,7 @@
 
 * {
     scrollbar-width: thin;
+    scrollbar-width: 1px;
     user-select: none;
     font-family: 'Futura Std', sans-serif;
 }
@@ -29,6 +30,7 @@ p {
     flex-direction: column;
     align-items: center;
     width: 40%;
+    background-color: rgb(53, 53, 53);
 }
 
 .leftDivChild {
@@ -36,6 +38,7 @@ p {
     height: 8%;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-bottom: 5px;
     display: flex;
     align-items: flex-start;
     flex-flow: row nowrap;
@@ -70,7 +73,7 @@ p {
     z-index: 9999;
     display: none;
     position: fixed;
-    background-color: aqua;
+    background-color: rgb(151, 151, 151);
     height: 200px;
     width: 100px;
 }
@@ -117,19 +120,19 @@ p {
     font-size: 32px;
     padding: 20px 60px;
     border-style: none;
-    background-color: rgb(128, 100, 200);
+    background-color: rgb(61, 44, 104);
     color: rgb(255, 255, 255);
 }
 
 .theButton:hover {
     cursor: pointer;
-    background-color: rgb(152, 123, 224);
+    background-color: rgb(96, 83, 129);
     color: rgb(226, 226, 226);
 }
 
 .theButton:active {
     font-size: 33px;
-    background-color: rgb(178, 135, 219);
+    background-color: rgb(137, 82, 189);
     color: rgb(255, 242, 124);
 }
 
