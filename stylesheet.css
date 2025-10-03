@@ -38,7 +38,7 @@ p {
     height: 8%;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     display: flex;
     align-items: flex-start;
     flex-flow: row nowrap;
