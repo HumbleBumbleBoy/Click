@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click!</title>
-    <link rel="icon" type="image/x-icon" href="images/cursor.png">
-    <link rel="stylesheet" href="stylesheet.css"> 
-</head>
-<body>
-    <div class="containerDiv">
-        <div class="leftDiv" id="leftUpgradeDiv">
-            
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Click!</title>
+        <link rel="icon" type="image/x-icon" href="images/cursor.png" />
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body>
+        <template id="upgradeCategory">
+            <div id="{{whichTierOfUpgrades}}" class="leftDivChild"></div>
+        </template>
+
+        <template id="upgradeTemplate_noQuantity">
+            <div class="leftDivChildElement">
+                <span class="nameText">${name}</span>
+                <span class="costText">Cost: ${cost}</span>
+            </div>
+        </template>
+
+        <template id="upgradeTemplate_withQuantity">
+            <div class="leftDivChildElement">
+                <span class="nameText">${name}</span>
+                <div class="costQuantitySpacing">
+                    <span class="costText"
+                        >Cost: ${cost}
+                        <span class="quantityText" id="data-quantityForId${id}"
+                            >Owned: ${quantity}</span
+                        ></span
+                    >
+                </div>
+            </div>
+        </template>
+
+        <div class="containerDiv">
+            <div class="leftDiv" id="leftUpgradeDiv"></div>
+
+            <div class="middleDiv">
+                <div class="middleDivStatsArea">
+                    <p class="middleDivStatsAreaChild" id="CPSText">
+                        CPS: missing
+                    </p>
+                    <p class="middleDivStatsAreaChild" id="CPCText">
+                        CPC: missing
+                    </p>
+                </div>
+                <div class="middleDivPlayArea">
+                    <p class="points" id="points"></p>
+                    <button class="theButton" onclick="userClick()">
+                        CLICK!
+                    </button>
+                    <!--dude what the actual fuck is your formatting default, i have to correct this shit so much-->
+                </div>
+            </div>
+
+            <div class="rightDiv"></div>
         </div>
 
-        <div class="middleDiv">
-            <div class="middleDivStatsArea">
-                <p class="middleDivStatsAreaChild" id="CPSText">CPS: missing</p>
-                <p class="middleDivStatsAreaChild" id="CPCText">CPC: missing</p>
-            </div>
-            <div class="middleDivPlayArea">
-                <p class="points" id="points"></p>
-                <button class="theButton" onclick="addPoints()">CLICK!</button>
-            </div>
-        </div>
-
-        <div class="rightDiv">
-            
-        </div>  
-    </div>
-
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 </html>

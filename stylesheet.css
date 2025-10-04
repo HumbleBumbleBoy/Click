@@ -1,14 +1,14 @@
-@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+@import url("https://fonts.cdnfonts.com/css/futura-std-4");
 
 * {
     scrollbar-width: thin;
     scrollbar-width: 1px;
     user-select: none;
-    font-family: 'Futura Std', sans-serif;
+    font-family: "Futura Std", sans-serif;
 }
 
 body {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(19, 19, 19);
 }
 
 p {
@@ -17,7 +17,7 @@ p {
     font-weight: bold;
 }
 
-.containerDiv { 
+.containerDiv {
     display: flex;
     flex-flow: row nowrap;
     height: 98vh;
@@ -29,15 +29,17 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    background-color: rgb(53, 53, 53);
+    width: 33%;
+    background-color: rgb(36, 34, 34);
 }
 
 .leftDivChild {
+    background-color: rgb(58, 57, 57);
     width: 90%;
     height: 12%;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     align-items: flex-start;
@@ -45,27 +47,54 @@ p {
     overflow-x: auto;
     position: relative;
     z-index: 1;
-}    
+}
 
 .leftDivChildElement {
     background-color: rgb(107, 107, 107);
     margin-left: 8px;
     margin-right: 8px;
-    min-width: 25%;
-    height: 100%;
+    min-width: 33%;
+    height: 95%;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
 }
 
-p.nameText {
+div.costQuantitySpacing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span.nameText {
     color: rgb(255, 255, 255);
     font-size: 22px;
-    margin-bottom: 0;
+    margin: auto;
+    text-wrap: balance;
 }
 
-p.costText {
+span.costText {
     color: rgb(255, 255, 180);
-    font-size: 14px;
+    font-size: 12px;
+}
+
+span.quantityText {
+    color: rgb(255, 202, 103);
+    font-size: 12px;
+}
+
+.upgradeLocked {
+    background-color: rgb(107, 107, 107);
+}
+
+.upgradeAvailable {
+    background-color: rgb(100, 61, 100);
+    cursor: pointer;
+}
+
+.upgradeAvailable:hover {
+    background-color: rgb(116, 78, 116);
 }
 
 .leftDivChildElement.upgradable {
@@ -95,7 +124,7 @@ p.costText {
 /* middle div */
 
 .middleDiv {
-    width: 20%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,6 +178,6 @@ p.costText {
 /* right div */
 
 .rightDiv {
-    width: 40%;
+    width: 33%;
+    background-color: rgb(36, 34, 34);
 }
-
